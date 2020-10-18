@@ -1,0 +1,76 @@
+Git Commands
+
+D:\eclipse\RestAussured_Automation>git
+
+D:\eclipse\RestAussured_Automation>git init
+
+D:\eclipse\RestAussured_Automation>git remote add orgin https://github.com/Dsilva-Rohan/RestAssured-Automation.git
+
+D:\eclipse\RestAussured_Automation>git status
+
+D:\eclipse\RestAussured_Automation>git add .
+
+D:\eclipse\RestAussured_Automation>git status
+
+D:\eclipse\RestAussured_Automation>git commit -m "Normal Restuassured Automation first commit"
+
+D:\eclipse\RestAussured_Automation>git push orgin master
+-----------------
+First time clone 
+
+D:\eclipse>git clone  https://github.com/Dsilva-Rohan/cucumber.git
+
+--------------------------------------------------------------------
+Git Baranch creation commands
+
+1) First create the Branch repository in git hub under master branch of the project
+
+D:\eclipse\SeleniumNewFramework>git branch
+* master
+
+
+
+D:\eclipse\SeleniumNewFramework>git fetch && git checkout Recruiter
+Switched to a new branch 'Recruiter'
+Branch 'Recruiter' set up to track remote branch 'Recruiter' from 'origin'.
+
+D:\eclipse\SeleniumNewFramework>git branch
+* Recruiter
+  master
+  
+   now do the code change in your project
+   
+   D:\eclipse\SeleniumNewFramework>git status
+On branch Recruiter
+Your branch is up to date with 'origin/Recruiter'.
+
+
+
+D:\eclipse\SeleniumNewFramework>git add src/main/java/com/qa/pages/recruiter.java
+
+D:\eclipse\SeleniumNewFramework>git status
+
+
+
+D:\eclipse\SeleniumNewFramework>git commit -m "adding the recruiter page"
+
+below command will not work becuse u r local is pointing to branch not to master branch
+D:\eclipse\SeleniumNewFramework> git push orgin master
+fatal: 'orgin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+give below command to push
+
+D:\eclipse\SeleniumNewFramework>git push origin Recruiter
+
+now do the code review process by raising the pull request and do the merge from branch to master branch
+
+
+-> then switch in local  branch to master branch
+D:\eclipse\SeleniumNewFramework>git checkout master
+
+-> now pull the new changes from the remote where multiple people are worked and merged to master branch.
+D:\eclipse\SeleniumNewFramework>git pull origin master
