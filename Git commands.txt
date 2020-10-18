@@ -74,3 +74,12 @@ D:\eclipse\SeleniumNewFramework>git checkout master
 
 -> now pull the new changes from the remote where multiple people are worked and merged to master branch.
 D:\eclipse\SeleniumNewFramework>git pull origin master
+
+-> now pull the new changes from the remote where multiple people are worked and merged to master branch.
+D:\eclipse\SeleniumNewFramework>git pull origin master
+
+
+merging file fom remote to local by using the fetch and merge
+D:\Git_Commands>git fetch
+
+D:\Git_Commands>git merge
